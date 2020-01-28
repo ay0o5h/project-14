@@ -1,0 +1,335 @@
+$maincolor :#04d4f0;
+$secondcolor :#05445e;
+$thirdcolor :aliceblue;
+$mainfont:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$secondfont:fantasy;
+.bttn {
+    background-color: $maincolor;
+    color: $secondcolor;
+    border-radius: 10px;
+    font-family: $mainfont;
+    text-transform: capitalize;
+    font-size: 20px;
+    border :1px solid $maincolor;
+}
+.btnhover {
+    background-color: $secondcolor;
+    color: $maincolor;
+}
+.h3 {
+    color: $maincolor;
+        text-shadow: 2px 2px black;
+        text-transform: capitalize;
+        font-family: $secondfont;
+}
+.p {
+    color: black;
+    text-transform: capitalize;
+    font-family: $mainfont;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* start navbar */
+.navbarr {
+    background-color: $secondcolor;
+    .navbar-brand {
+        color: $maincolor;
+        font-family: $secondfont;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-left: 70px;
+    }
+    .navbar-light {
+        .navbar-nav {
+            margin-left: 150px;
+            .nav-link{
+                color: $thirdcolor;
+                text-transform: capitalize;
+                font-family: $mainfont;
+                margin-left: 20px;
+            }
+        }
+    }
+    .btn {
+        margin-right: 100px;
+       @extend .bttn;
+       &:hover {
+        @extend .btnhover
+       }
+    } 
+    .active {
+        border-bottom: 1px solid $maincolor;
+    }
+}
+/* end navbar */
+/* start main */ 
+.main {
+    background-color: $secondcolor;
+    padding: 3%;
+    border-top:1px solid $thirdcolor;
+    h2 {
+        margin-top: 30px;
+        color: $maincolor;
+        font-family: $secondfont;
+        text-transform: capitalize;
+    }
+    p {
+        color: $thirdcolor;
+        font-family: $mainfont;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+    .btn-light {
+        @extend .bttn ;
+        &:hover {
+            @extend .btnhover
+        }
+    }
+    .btn-dark{
+        background-color: $secondcolor;
+        color: $maincolor;
+        border-radius: 10px;
+        font-family: $mainfont;
+        text-transform: capitalize;
+        font-size: 20px;
+        border :1px solid $maincolor;
+        &:hover {
+            background-color: $maincolor;
+            color: $secondcolor;
+        }
+    }
+}
+/* end main */
+/* start icons */ 
+.icons {
+    padding: 5%;
+    .row {
+        margin-right: 0;
+    }
+    .col-sm-3 ,h4 {
+        margin-top: 50px;
+    }
+    h3 {
+       @extend .h3
+    }
+    h4 ,p {
+       @extend .p
+    }
+    i {
+        color: $maincolor;
+        font-size: 50px;
+    }
+}
+/* end icons */
+/* start properties */
+.properties {
+    .row {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        margin-top: 25%;
+        @extend .h3;
+    }
+    p {
+       @extend .p;
+    }
+    .btn {
+        @extend .bttn ;
+        &:hover {
+            @extend .btnhover
+           }
+    }
+    h5 {
+        color :$maincolor;
+        font-family: $mainfont;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+   .pro {
+    ul {
+        list-style-type: none;
+        li {
+            border: 1px solid $secondcolor;
+            height: 50px;
+            width: 75%;
+            padding: 2%;
+            margin-top: 40px;
+            font-family: $mainfont;
+            border-radius: 5px;
+            text-transform: capitalize;
+            color: $secondcolor;
+            cursor: pointer;
+        }
+    }
+    i {
+        color:$secondcolor;
+        font-size: 20px;
+    }
+    span {
+        display: none;
+    }
+    .active {
+        height: 100px;
+        background-color: $maincolor;
+        span {
+            display:block
+        }
+    }
+   }
+   .pro1 {
+    i {
+        background-color: $maincolor;
+        color: $thirdcolor;
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    h3 {
+        margin-top: 50px;
+    }
+    li {
+        text-transform: capitalize;
+        font-family: $mainfont;
+        color: $secondcolor;
+        margin-top: 15px;
+    }
+   }
+}
+/* end properties */
+/* start contact */
+.contact {
+    background-color: $secondcolor;
+    padding: 5%;
+    h3 {
+        margin-top: 25px;
+        @extend .h3;
+    }
+    input , textarea {
+        padding: 10px;
+        outline: unset;
+        border-radius: 20px;
+        border :3px solid $maincolor;
+        font-family: $mainfont;
+        color: $maincolor;
+        display: block;
+        margin-top: 30px;
+        height: 50px;
+        width: 50%;
+    }
+    ::placeholder {
+        font-family: $mainfont;
+        color: $maincolor;
+        text-transform: capitalize;
+    }
+    .btn {
+        margin-top: 30px;
+        @extend .bttn ;
+        &:hover {
+            @extend .btnhover
+        }
+    }
+}
+/* end contact us */
+/* start join */
+.join {
+    padding: 3%;
+    h3 {
+        @extend .h3
+    }
+    p {
+        margin-top: 20px;
+        @extend .p
+    }
+    .btn {
+        margin-top: 30px;
+        @extend .bttn ;
+        &:hover {
+            @extend .btnhover
+        }
+    }
+}
+/* end join */
+/* start text */
+.text {
+    background-color: $secondcolor;
+    padding: 3%;
+    p {
+        color :$thirdcolor;
+        text-transform: capitalize;
+        font-family: $mainfont;
+    }
+}
+/* end text */
+/* start download */
+.download {
+    padding: 5%;
+    h3 {
+        text-align: left;
+        @extend .h3
+    }
+    p {
+        text-align: left;
+        @extend .p
+    }
+    .btn-dark {
+        font-family: $mainfont;
+        text-transform: capitalize;
+        border-radius: 10px;
+        padding: 2%;
+       margin-left: 30px;
+        margin-top: 30px;
+        span {
+            font-size :10px;
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+    .btn-light {
+        margin-top: 50px;
+        @extend .bttn ;
+        &:hover {
+            @extend .btnhover
+        }
+    }
+}
+/* end download */
+/* start menus */ 
+.menus {
+    background-color: $secondcolor;
+    color :$thirdcolor;
+    font-family: $mainfont;
+    text-transform: capitalize;
+    padding: 3%;
+    ul {
+        list-style-type: none;
+    }
+}
+/* end menus */
+/* start footer */
+.footer {
+    background-color: $secondcolor;
+    padding: 1%;
+    border-top: 1px solid $thirdcolor;
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    p{
+        color :$maincolor;
+    font-family: $mainfont;
+    text-transform: capitalize;
+    }
+    i {
+        color: $thirdcolor;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+/* end footer */

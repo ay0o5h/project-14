@@ -1,0 +1,352 @@
+.bttn, .navbarr .btn, .main .btn-light, .properties .btn, .contact .btn, .join .btn, .download .btn-light {
+  background-color: #04d4f0;
+  color: #05445e;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: 1px solid #04d4f0;
+}
+
+.btnhover, .navbarr .btn:hover, .main .btn-light:hover, .properties .btn:hover, .contact .btn:hover, .join .btn:hover, .download .btn-light:hover {
+  background-color: #05445e;
+  color: #04d4f0;
+}
+
+.h3, .icons h3, .properties h3, .contact h3, .join h3, .download h3 {
+  color: #04d4f0;
+  text-shadow: 2px 2px black;
+  text-transform: capitalize;
+  font-family: fantasy;
+}
+
+.p, .icons h4, .icons p, .properties p, .join p, .download p {
+  color: black;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* start navbar */
+.navbarr {
+  background-color: #05445e;
+}
+
+.navbarr .navbar-brand {
+  color: #04d4f0;
+  font-family: fantasy;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-left: 70px;
+}
+
+.navbarr .navbar-light .navbar-nav {
+  margin-left: 150px;
+}
+
+.navbarr .navbar-light .navbar-nav .nav-link {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 20px;
+}
+
+.navbarr .btn {
+  margin-right: 100px;
+}
+
+.navbarr .active {
+  border-bottom: 1px solid #04d4f0;
+}
+
+/* end navbar */
+/* start main */
+.main {
+  background-color: #05445e;
+  padding: 3%;
+  border-top: 1px solid aliceblue;
+}
+
+.main h2 {
+  margin-top: 30px;
+  color: #04d4f0;
+  font-family: fantasy;
+  text-transform: capitalize;
+}
+
+.main p {
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.main .btn-dark {
+  background-color: #05445e;
+  color: #04d4f0;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  border: 1px solid #04d4f0;
+}
+
+.main .btn-dark:hover {
+  background-color: #04d4f0;
+  color: #05445e;
+}
+
+/* end main */
+/* start icons */
+.icons {
+  padding: 5%;
+}
+
+.icons .row {
+  margin-right: 0;
+}
+
+.icons .col-sm-3, .icons h4 {
+  margin-top: 50px;
+}
+
+.icons i {
+  color: #04d4f0;
+  font-size: 50px;
+}
+
+/* end icons */
+/* start properties */
+.properties .row {
+  margin-right: 0;
+}
+
+.properties img {
+  width: 100%;
+  height: 100%;
+}
+
+.properties h3 {
+  margin-top: 25%;
+}
+
+.properties h5 {
+  color: #04d4f0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.properties .pro ul {
+  list-style-type: none;
+}
+
+.properties .pro ul li {
+  border: 1px solid #05445e;
+  height: 50px;
+  width: 75%;
+  padding: 2%;
+  margin-top: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #05445e;
+  cursor: pointer;
+}
+
+.properties .pro i {
+  color: #05445e;
+  font-size: 20px;
+}
+
+.properties .pro span {
+  display: none;
+}
+
+.properties .pro .active {
+  height: 100px;
+  background-color: #04d4f0;
+}
+
+.properties .pro .active span {
+  display: block;
+}
+
+.properties .pro1 i {
+  background-color: #04d4f0;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.properties .pro1 h3 {
+  margin-top: 50px;
+}
+
+.properties .pro1 li {
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #05445e;
+  margin-top: 15px;
+}
+
+/* end properties */
+/* start contact */
+.contact {
+  background-color: #05445e;
+  padding: 5%;
+}
+
+.contact h3 {
+  margin-top: 25px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  outline: unset;
+  border-radius: 20px;
+  border: 3px solid #04d4f0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #04d4f0;
+  display: block;
+  margin-top: 30px;
+  height: 50px;
+  width: 50%;
+}
+
+.contact ::-webkit-input-placeholder {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #04d4f0;
+  text-transform: capitalize;
+}
+
+.contact :-ms-input-placeholder {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #04d4f0;
+  text-transform: capitalize;
+}
+
+.contact ::-ms-input-placeholder {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #04d4f0;
+  text-transform: capitalize;
+}
+
+.contact ::placeholder {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #04d4f0;
+  text-transform: capitalize;
+}
+
+.contact .btn {
+  margin-top: 30px;
+}
+
+/* end contact us */
+/* start join */
+.join {
+  padding: 3%;
+}
+
+.join p {
+  margin-top: 20px;
+}
+
+.join .btn {
+  margin-top: 30px;
+}
+
+/* end join */
+/* start text */
+.text {
+  background-color: #05445e;
+  padding: 3%;
+}
+
+.text p {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* end text */
+/* start download */
+.download {
+  padding: 5%;
+}
+
+.download h3 {
+  text-align: left;
+}
+
+.download p {
+  text-align: left;
+}
+
+.download .btn-dark {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 2%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.download .btn-dark span {
+  font-size: 10px;
+}
+
+.download .btn-dark img {
+  margin-right: 5px;
+}
+
+.download .btn-light {
+  margin-top: 50px;
+}
+
+/* end download */
+/* start menus */
+.menus {
+  background-color: #05445e;
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  padding: 3%;
+}
+
+.menus ul {
+  list-style-type: none;
+}
+
+/* end menus */
+/* start footer */
+.footer {
+  background-color: #05445e;
+  padding: 1%;
+  border-top: 1px solid aliceblue;
+}
+
+.footer .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.footer p {
+  color: #04d4f0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.footer i {
+  color: aliceblue;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/* end footer */
+/*# sourceMappingURL=style.css.map */
